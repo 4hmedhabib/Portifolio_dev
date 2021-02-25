@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ :root {
+    --primary-color: #ff5678
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-danger {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+font {
+    color: var(--primary-color);
+}
+
+hr {
+    width: 100%;
+    height: 0px;
+    border: 0.5px solid #909090;
+}
+
+
+/* header */
+
+#header {
+    width: 100%;
+    height: 139px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#nav ul li {
+    padding: .5rem 1rem;
+}
+
+#nav ul li a {
+    color: #000;
+    font-family: 400;
+}
+
+#nav button {
+    font-size: 16px;
+    padding: 8px 15px;
+}
+
+
+/* Showcase */
+
+#showcase {
+    width: 100%;
+    height: 650px;
+    background-image: url(../images/Header\ Illustration.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto 363px;
+    margin-top: 50px;
+}
+
+#showcase .text-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#showcase .text-desc h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#showcase .btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#showcase .btn-icon button {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#showcase .btn-icon .m {
+    margin-right: 10px;
+}
+
+
+/* Section About Me */
+
+#about {
+    width: 100%;
+    height: 690px;
+    margin: 100px 0px;
+    background-image: url(../images/About\ Me\ -\ Illustration.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 460.28px auto;
+}
+
+#about .text-about h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#about .text-about p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* Section Experience */
+
+#experience {
+    width: 100%;
+    height: 320px;
+    margin: 50px auto;
+}
+
+#experience .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#experience .title h2 {
+    font-weight: bold;
+}
+
+#experience .title a {
+    font-size: 14px;
+    color: #999;
+}
+
+#experience .experience-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+#experience .experience-content .card p:first-child,
+#experience .experience-content .card p span {
+    font-size: 15px;
+    color: #999;
+    font-weight: 300;
+}
+
+
+/* Section Skillset */
+
+#skillset h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#skillset .skillset-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#skillset .skillset-content .card {
+    width: 380px;
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .15);
+    margin-bottom: 30px;
+    padding: 15px 25px;
+}
+
+#skillset .skillset-content .card h3 {
+    margin-bottom: 15px;
+}
+
+#skillset .skillset-content .card img {
+    margin-bottom: 15px;
+}
+
+#skillset .skillset-content .card:first-child img {
+    width: 63.96px;
+    margin-bottom: 20px;
+}
+
+#skillset .skillset-content .card:nth-child(2) img {
+    width: 68.01px;
+    height: 61.43px;
+}
+
+#skillset .skillset-content .card:last-child img {
+    width: 70.86px;
+    height: 61.43px;
+}
+
+
+/* Section Works */
+
+#selectedworks {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#selectedworks h2 {
+    margin-bottom: 25px;
+}
+
+#selectedworks .selectedowrk-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#selectedworks .selectedowrk-content .img {
+    margin-bottom: 15px;
+}
+
+#selectedworks .selectedowrk-content .img img {
+    width: 409px;
+    height: 245px;
+}
+
+
+/* Section Skillset Last */
+
+#skillset-l {
+    margin-top: 50px;
+    width: 100%;
+    height: 240px;
+    background-image: url(../images//skillset-last.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+#skillset-l h2 {
+    margin-bottom: 15px;
+}
+
+#skillset-l a {
+    color: var(--primary-color);
+}
+
+
+/* Section contact */
+
+#contact {
+    display: grid;
+    grid-template-rows: repeat(2, 220px);
+    margin-top: 150px;
+}
+
+#contact h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-text button {
+    margin-top: 20px;
+    padding: 15px 56px;
+    font-size: 20px;
+}
+
+#contact .follow .icon {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .follow .icon a i {
+    margin-right: 10px;
+}
+
+#contact .follow .icon a {
+    margin: 10px 0px;
+    color: #000;
+}
+
+
+/* Responsive Rule */
+
+@media (max-width: 600px) {
+    #showcase {
+        background-size: auto 320px;
+    }
+    #about {
+        background-size: 420px auto;
+    }
+}
