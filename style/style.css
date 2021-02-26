@@ -16,6 +16,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 .btn-danger {
@@ -256,10 +257,12 @@ hr {
 
 #selectedworks .selectedowrk-content .img {
     margin-bottom: 15px;
+    justify-self: center;
+    align-self: center;
 }
 
 #selectedworks .selectedowrk-content .img img {
-    width: 409px;
+    width: 100%;
     height: 245px;
 }
 
@@ -272,7 +275,7 @@ hr {
     height: 240px;
     background-image: url(../images//skillset-last.png);
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: center bottom;
 }
 
 #skillset-l h2 {
@@ -315,6 +318,31 @@ hr {
 #contact .follow .icon a {
     margin: 10px 0px;
     color: #000;
+    font-size: 20px;
+}
+
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    height: 109px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p {
+    color: #fff;
+    font-size: 16px;
+}
+
+#footer p a {
+    color: #fff;
 }
 
 
@@ -326,5 +354,97 @@ hr {
     }
     #about {
         background-size: 420px auto;
+    }
+}
+
+@media (min-width: 845px) {
+    #skillset .skillset-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #skillset .skillset-content .card {
+        width: 360px;
+        height: 214px;
+        margin-right: 10px;
+    }
+    #selectedworks .selectedowrk-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 375px);
+        gap: 20px;
+    }
+    #selectedworks .selectedowrk-content .img img {
+        height: 375px;
+    }
+    #selectedworks .selectedowrk-content .img-1 {
+        grid-column: 1 / span 2;
+    }
+    #skillset-l {
+        background-position: right top;
+        height: 170px;
+    }
+    #skillset-l .skillset-content {
+        width: 528px;
+    }
+    #contact {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 950px) {
+    #showcase {
+        height: 400px;
+        background-position: right top;
+    }
+    #showcase .text-desc {
+        width: 500px;
+        align-items: flex-start;
+        text-align: left;
+    }
+    #showcase .text-desc h2 {
+        margin-top: 30px;
+    }
+    #showcase .text-desc p {
+        width: 400px;
+    }
+    #showcase .btn-icon {
+        justify-content: flex-start;
+    }
+    #about {
+        height: 350px;
+        background-position: right center;
+        background-size: 360.28px 228.64px;
+    }
+    #about .text-about {
+        width: 500px;
+    }
+    #experience .experience-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #contact {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 11fr);
+        column-gap: 140px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 80%;
+        margin: auto
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        width: 70%;
+        margin: auto
+    }
+}
+
+@media (min-width: 1500px) {
+    body {
+        width: 60%;
+        margin: auto
     }
 }
